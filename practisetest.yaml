@@ -1,0 +1,9 @@
+---
+- name: testing ansible file
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: create a new file and copy it tmp folder
+      copy:
+        content: "Hello, this is vignan"
+        dest: /tmp/ansible_txt_file.txt
